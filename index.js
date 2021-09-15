@@ -17,5 +17,7 @@ for(let i = 0; i < 2000; i++){
             })
             fs.writeFileSync(`./tembak.json`, JSON.stringify(_tembak, null, 2))
             console.log(clc.greenBright('['+os.uptime+'] Sukses +1 ke databasenya'))
+    }).catch((err) => {
+
     })
 }
